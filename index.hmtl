@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NALIZ – Make-up • Hair • Hijab</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Elegante Schriftart von Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">NALIZ</div>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#about">Über uns</a>
+            <a href="#booking">Termin buchen</a>
+        </nav>
+    </header>
+
+    <!-- Hero / Startbereich -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subtitle">MAKE-UP • HAIR • HIJAB</span>
+            <h1>Exklusives Styling für deinen besonderen Anlass</h1>
+            <a href="#booking" class="btn">Termin anfragen</a>
+        </div>
+    </section>
+
+    <!-- Dienstleistungen -->
+    <section id="services" class="container">
+        <h2 class="section-title">Unsere Services</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Bridal Styling</h3>
+                <p>Umfassendes Braut-Styling inklusive Make-up, Hairstyling oder elegantem Hijab-Styling für deinen großen Tag.</p>
+            </div>
+            <div class="card">
+                <h3>Event & Anlass</h3>
+                <p>Perfektes Styling für Verlobungen, Henna-Abende, Abibälle oder besondere Feiern.</p>
+            </div>
+            <div class="card">
+                <h3>Hijab & Make-up</h3>
+                <p>Präzise abgestimmtes Make-up und professionelles Hijab-Styling nach deinen individuellen Wünschen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buchung -->
+    <section id="booking" class="container bg-nude">
+        <h2 class="section-title">Terminvereinbarung</h2>
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="name">Vollständiger Name</label>
+                <input type="text" id="name" required placeholder="z. B. Merve Yilmaz">
+            </div>
+
+            <div class="form-group">
+                <label for="service">Gewünschter Service</label>
+                <select id="service">
+                    <option value="braut">Braut-Styling (Komplett)</option>
+                    <option value="anlass">Event- / Anlass-Styling</option>
+                    <option value="hijab">Hijab-Styling</option>
+                    <option value="makeup">Make-up Solo</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Wunschdatum</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <button type="submit" class="btn btn-full">Anfrage abschicken</button>
+        </form>
+    </section>
+
+<div id="beauty-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-icon">✨</div>
+            <h2>Anfrage erhalten!</h2>
+            <p id="modal-message">Vielen Dank für deine Anfrage.</p>
+            <button class="btn btn-full close-modal-btn">Verstanden</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 NALIZ – Make-up • Hair • Hijab. Alle Rechte vorbehalten.</p>
+    </footer>
+<!-- JavaScript für die Formular-Logik -->
+    <script src="script.js"></script>
+
+</body>
+</html>
