@@ -136,6 +136,8 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    height: 500px
+    box-sizing: border-box;
 }
 
 .hero-textbox .hero-sub {
