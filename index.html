@@ -156,10 +156,28 @@
             <div class="form-group">
                 <label for="service">Gewünschter Service</label>
                 <select id="service">
-                    <option value="braut">Braut-Styling (Komplett)</option>
-                    <option value="anlass">Event- / Anlass-Styling</option>
-                    <option value="hijab">Hijab-Styling</option>
-                    <option value="makeup">Make-up Solo</option>
+                  <div class="form-group">
+    <label for="service">Gewünschter Service</label>
+    <select id="service" name="service" required style="width: 100%; padding: 12px; border: 1px solid var(--color-nude-accent); background: #fff; border-radius: 4px; font-family: 'Montserrat', sans-serif;">
+        <option value="" disabled selected>Bitte Service wählen...</option>
+        
+        <!-- HAIR -->
+        <option value="Hochsteckfrisur">Hair: Hochsteckfrisur (60.-)</option>
+        <option value="Verlobungsfrisur">Hair: Verlobungsfrisur (110.-)</option>
+        <option value="Brautfrisur">Hair: Brautfrisur - Henna/Standesamt (150.-)</option>
+        
+        <!-- MAKE-UP -->
+        <option value="Abend-Make-up">Make-up: Abend-Make-up (60.-)</option>
+        <option value="Verlobungsbraut">Make-up: Verlobungsbraut (110.-)</option>
+        <option value="Braut-Make-up">Make-up: Braut-Make-up - Henna/Standesamt (150.-)</option>
+        
+        <!-- HIJAB STYLING -->
+        <option value="Hijab">Hijab Styling (60.-)</option>
+        <option value="Hijab-Verlobung">Hijab-Styling zur Verlobung (110.-)</option>
+        <option value="Braut-Hijab">Braut-Hijab - Henna/Standesamt (150.-)</option>
+        
+        <!-- SPECIALS -->
+        <option value="VIP-mobil">Specials: VIP / mobil (ab 400.-)</option>
                 </select>
             </div>
 
