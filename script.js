@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
             currentSlide = (currentSlide + direction + slides.length) % slides.length;
             slides[currentSlide].classList.add('active');
         }
-    };
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
 
 });
     
