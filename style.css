@@ -273,3 +273,15 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+/* --- Über mich --- */
+#about-me {
+    padding: 3rem 2rem;
+    max-width: 800px; /* Hält den Text schmal und leserlich */
+    margin: 0 auto;  /* Zentriert den Text auf der Seite */
+    line-height: 1.6;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem; /* Abstand zwischen den Absätzen */
+}
+
