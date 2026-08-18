@@ -186,18 +186,5 @@
         <p>&copy; 2026 NALIZ – Make-up • Hair • Hijab. Alle Rechte vorbehalten.</p>
     </footer>
 
-    <!-- JavaScript für den Slider und Formular-Logik -->
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.hero-slider .slide');
-
-        function moveSlide(direction) {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + direction + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-    </script>
-    <script src="script.js"></script>
-
 </body>
 </html>
