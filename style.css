@@ -1,4 +1,9 @@
-/* Farbvariablen aus dem Logo */
+/* Smooth Scrolling
+html {
+    scroll-behavior; smooth;
+}
+
+/*Farbvariablen aus dem Logo */
 :root {
     --color-black: #1a1a1a;
     --color-taupe: #a88b7d;
@@ -17,11 +22,6 @@ body {
     background-color: var(--color-white);
     line-height: 1.6;
 }
-
-/*weiches Herunterspringen der Navigation */
-html {
-    scroll-behavoir: smooth;
-}    
  
 /* Header & Logo */
 header {
