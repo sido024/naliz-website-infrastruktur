@@ -16,109 +16,131 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="Logo_Zilan.jpg" alt="Logo_Zilan">
+                <img src="Logo_Zilan.jpg" alt="Logo NALIZ">
             </a> 
         </div> 
-       <nav>
+        <nav>
             <a href="#Leistungen">Leistungen</a>
             <a href="#about-me">Über mich</a>
             <a href="#booking">Termin buchen</a>
         </nav>
     </header>
 
-    <!-- Hero / Startbereich -->
-    <section class="hero">
-        <div class="hero-content">
-            <span class="subtitle">MAKE-UP • HAIR • HIJAB</span>
-            <h1>Exklusives Styling für deinen besonderen Anlass</h1>
-            <a href="#booking" class="btn">Termin anfragen</a>
+    <!-- Hero / Startbereich mit Slider und Textbox -->
+    <section class="hero-slider-section">
+        <div class="hero-container">
+            
+            <!-- LINKE SEITE: Der Bild-Slider (hier kannst du später deine 3-4 Ladenbilder als bild1.jpg, bild2.jpg etc. einfügen) -->
+            <div class="hero-slider">
+                <div class="slide active">
+                    <img src="placeholder-1.jpg" alt="Salon Ansicht 1">
+                </div>
+                <div class="slide">
+                    <img src="placeholder-2.jpg" alt="Salon Ansicht 2">
+                </div>
+                <div class="slide">
+                    <img src="placeholder-3.jpg" alt="Salon Ansicht 3">
+                </div>
+                
+                <!-- Navigations-Pfeile -->
+                <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+            <!-- RECHTE SEITE: Die Textbox im edlen Nude-/Taupe-Look -->
+            <div class="hero-textbox">
+                <span class="hero-sub">MAKE-UP • HAIR • HIJAB</span>
+                <h2>Beauty Salon<br><strong>NALIZ Herne</strong></h2>
+                <div class="hero-line"></div>
+                <p>
+                    Unsere Beauty-Expertinnen verwöhnen Sie in unserem Kosmetikstudio in Herne. Freuen Sie sich auf familiären Service und ausgezeichnete Qualität.
+                </p>
+                <a href="#about-me" class="hero-btn">Mehr über uns ...</a>
+            </div>
+
         </div>
     </section>
 
+    <!-- Standort Info -->
     <div style="text-align: center; padding: 40px 20px; font-family: inherit; color: #333;">
-    <h3 style="font-size: 1.5rem; margin-bottom: 10px; font-weight: normal; letter-spacing: 1px;">Standort ab September</h3>
-    <p style="margin: 5px 0; color: #666;">Wir renovieren aktuell für dich!</p>
-    <p style="margin: 5px 0; font-weight: bold;">Dorstener Str. 67, 44625 Herne</p>
-</div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 10px; font-weight: normal; letter-spacing: 1px;">Standort ab September</h3>
+        <p style="margin: 5px 0; color: #666;">Wir renovieren aktuell für dich!</p>
+        <p style="margin: 5px 0; font-weight: bold;">Dorstener Str. 67, 44625 Herne</p>
+    </div>
 
     <!-- Dienstleistungen -->
-<section id="Leistungen" class="container"> 
-    <!-- Äußerster Container, der die linke und rechte Seite nebeneinander setzt -->
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 60px; max-width: 1200px; margin: 0 auto;">
-        
-        <!-- LINKE SEITE: Große, markante Überschrift -->
-        <div class="scroll-reveal-box" style="flex: 1; min-width: 280px; max-width: 450px; text-align: left; position: sticky; top: 100px;">
-            <h2 style="font-size: 3rem; line-height: 1.1; font-weight: normal; letter-spacing: 2px; color: #111; margin-bottom: 20px;">
-                UNSERE<br>LEISTUNGEN<br><span style="font-weight: bold; color: #555;">FÜR DICH</span>
-            </h2>
-            <p style="color: #666; font-size: 1.1rem; line-height: 1.6;">
-                Exklusives Styling und professionelle Angebote, perfekt abgestimmt auf deinen großen Auftritt.
-            </p>
-        </div>
-
-        <!-- RECHTE SEITE: Die Kategorien untereinander / als Blöcke -->
-        <div style="flex: 1.2; min-width: 300px; display: flex; flex-direction: column; gap: 30px;">
+    <section id="Leistungen" class="container"> 
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 60px; max-width: 1200px; margin: 0 auto;">
             
-            <!-- Kategorie 1: HAIR -->
-            <div class="scroll-reveal-box" style="background: #ffffff; border: 1px solid #e0e0e0; padding: 30px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
-                <h3 style="font-size: 1.2rem; margin-bottom: 10px; letter-spacing: 2px; border-bottom: 2px solid #333; padding-bottom: 10px; color: #111;">HAIR</h3>
-                <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">Von eleganten Hochsteckfrisuren bis zum perfekten Brautstyling.</p>
-                <ul style="list-style: none; padding: 0; color: #555; line-height: 2; font-size: 0.95rem;">
-                    <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Hochsteckfrisur</span> <strong> 60.- </strong></li>
-                    <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Verlobungsfrisur</span> <strong>110.-</strong></li>
-                    <li style="display: flex; justify-content: space-between; padding: 5px 0;"><span>Brautfrisur (Henna,Standesamt)</span> <strong>150.-</strong></li>
-                </ul>
+            <!-- LINKE SEITE: Große, markante Überschrift -->
+            <div class="scroll-reveal-box" style="flex: 1; min-width: 280px; max-width: 450px; text-align: left; position: sticky; top: 100px;">
+                <h2 style="font-size: 3rem; line-height: 1.1; font-weight: normal; letter-spacing: 2px; color: #111; margin-bottom: 20px;">
+                    UNSERE<br>LEISTUNGEN<br><span style="font-weight: bold; color: #555;">FÜR DICH</span>
+                </h2>
+                <p style="color: #666; font-size: 1.1rem; line-height: 1.6;">
+                    Exklusives Styling und professionelle Angebote, perfekt abgestimmt auf deinen großen Auftritt.
+                </p>
             </div>
 
-            <!-- Kategorie 2: MAKE-UP -->
-            <div class="scroll-reveal-box" style="background: #ffffff; border: 1px solid #e0e0e0; padding: 30px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
-                <h3 style="font-size: 1.2rem; margin-bottom: 10px; letter-spacing: 2px; border-bottom: 2px solid #333; padding-bottom: 10px; color: #111;">MAKE-UP</h3>
-                <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">Strahlendes Tages- oder glamouröses Abend-Make-up.</p>
-                <ul style="list-style: none; padding: 0; color: #555; line-height: 2; font-size: 0.95rem;">
-                    <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Abend-Make-up</span> <strong>60.-</strong></li>
-                    <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Verlobungsbraut</span> <strong>110.-</strong></li>
-                    <li style="display: flex; justify-content: space-between; padding: 5px 0;"><span>Braut-Make-up (Henna,Standesamt)</span> <strong>150.-</strong></li>
-                </ul>
-            </div>
+            <!-- RECHTE SEITE: Die Kategorien -->
+            <div style="flex: 1.2; min-width: 300px; display: flex; flex-direction: column; gap: 30px;">
+                
+                <!-- Kategorie 1: HAIR -->
+                <div class="scroll-reveal-box" style="background: #ffffff; border: 1px solid #e0e0e0; padding: 30px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px; letter-spacing: 2px; border-bottom: 2px solid #333; padding-bottom: 10px; color: #111;">HAIR</h3>
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">Von eleganten Hochsteckfrisuren bis zum perfekten Brautstyling.</p>
+                    <ul style="list-style: none; padding: 0; color: #555; line-height: 2; font-size: 0.95rem;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Hochsteckfrisur</span> <strong> 60.- </strong></li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Verlobungsfrisur</span> <strong>110.-</strong></li>
+                        <li style="display: flex; justify-content: space-between; padding: 5px 0;"><span>Brautfrisur (Henna, Standesamt)</span> <strong>150.-</strong></li>
+                    </ul>
+                </div>
 
-            <!-- Kategorie 3: HIJAB STYLING -->
-            <div class="scroll-reveal-box" style="background: #ffffff; border: 1px solid #e0e0e0; padding: 30px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
-                <h3 style="font-size: 1.2rem; margin-bottom: 10px; letter-spacing: 2px; border-bottom: 2px solid #333; padding-bottom: 10px; color: #111;">HIJAB STYLING</h3>
-                <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">Stilvolle und moderne Drapierungen für besondere Anlässe.</p>
-                <ul style="list-style: none; padding: 0; color: #555; line-height: 2; font-size: 0.95rem;">
-                    <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Hijab</span> <strong>60.-</strong></li>
-                    <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Hijab-Styling zur Verlobung</span><strong>110.-</strong></li>
-                    <li style="display: flex; justify-content: space-between; padding: 5px 0;"><span>Braut-Hijab (Henna,Standesamt)</span> <strong>150.-</strong></li>
-                </ul>
-            </div>
+                <!-- Kategorie 2: MAKE-UP -->
+                <div class="scroll-reveal-box" style="background: #ffffff; border: 1px solid #e0e0e0; padding: 30px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px; letter-spacing: 2px; border-bottom: 2px solid #333; padding-bottom: 10px; color: #111;">MAKE-UP</h3>
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">Strahlendes Tages- oder glamouröses Abend-Make-up.</p>
+                    <ul style="list-style: none; padding: 0; color: #555; line-height: 2; font-size: 0.95rem;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Abend-Make-up</span> <strong>60.-</strong></li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Verlobungsbraut</span> <strong>110.-</strong></li>
+                        <li style="display: flex; justify-content: space-between; padding: 5px 0;"><span>Braut-Make-up (Henna, Standesamt)</span> <strong>150.-</strong></li>
+                    </ul>
+                </div>
 
-            <!-- Kategorie 4: SPECIALS -->
-            <div class="scroll-reveal-box" style="background: #ffffff; border: 1px solid #e0e0e0; padding: 30px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
-                <h3 style="font-size: 1.2rem; margin-bottom: 10px; letter-spacing: 2px; border-bottom: 2px solid #333; padding-bottom: 10px; color: #111;">SPECIALS</h3>
-                <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">Exklusive Komplettpakete und individuelle Probetermine.</p>
-                <ul style="list-style: none; padding: 0; color: #555; line-height: 2; font-size: 0.95rem;">
-                    <li style="display: flex; justify-content: space-between; padding: 5px 0;"><span>VIP / mobil</span> <strong>ab 400.-</strong></li>
-                </ul>
-            </div>
+                <!-- Kategorie 3: HIJAB STYLING -->
+                <div class="scroll-reveal-box" style="background: #ffffff; border: 1px solid #e0e0e0; padding: 30px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px; letter-spacing: 2px; border-bottom: 2px solid #333; padding-bottom: 10px; color: #111;">HIJAB STYLING</h3>
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">Stilvolle und moderne Drapierungen für besondere Anlässe.</p>
+                    <ul style="list-style: none; padding: 0; color: #555; line-height: 2; font-size: 0.95rem;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Hijab</span> <strong>60.-</strong></li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0;"><span>Hijab-Styling zur Verlobung</span><strong>110.-</strong></li>
+                        <li style="display: flex; justify-content: space-between; padding: 5px 0;"><span>Braut-Hijab (Henna, Standesamt)</span> <strong>150.-</strong></li>
+                    </ul>
+                </div>
 
+                <!-- Kategorie 4: SPECIALS -->
+                <div class="scroll-reveal-box" style="background: #ffffff; border: 1px solid #e0e0e0; padding: 30px; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.03);">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 10px; letter-spacing: 2px; border-bottom: 2px solid #333; padding-bottom: 10px; color: #111;">SPECIALS</h3>
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px;">Exklusive Komplettpakete und individuelle Probetermine.</p>
+                    <ul style="list-style: none; padding: 0; color: #555; line-height: 2; font-size: 0.95rem;">
+                        <li style="display: flex; justify-content: space-between; padding: 5px 0;"><span>VIP / mobil</span> <strong>ab 400.-</strong></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-
-    </div>
-</section>
+    </section>
 
     <!-- Über mich -->
-<section id="about-me">
-    <h2>Über mich</h2>
-    <div class="about-content">
-        <p>Schon als Kind hatte ich den Traum, etwas Eigenes aufzubauen. Was als Leidenschaft für Brautkleider-Skizzen und Hochsteckfrisuren an meinen Barbie-Puppen begann, entwickelte sich über die Jahre zu meiner Berufung.</p>
-        
-        <p>Make-up und Hairstyling faszinierten mich schon immer. Mit viel Disziplin, autodidaktischem Lernen durch Fachbücher und unzähligen Stunden des Übens habe ich mir mein Wissen hart erarbeitet – eine Erfahrung, für die ich heute unglaublich dankbar bin. Seit 2017 konnte ich in Salons erste professionelle Erfahrungen sammeln, während ich mein Können stetig verfeinerte.</p>
-        
-        <p>Ende 2025 habe ich mir mit meinem Ladenlokal in Herne endlich den Traum von der eigenen Marke erfüllt. Was mich bis heute antreibt, ist das Strahlen meiner Kundinnen: Wenn sie am Ende in den Spiegel schauen und sich besonders selbstbewusst und wunderschön fühlen, weiß ich, warum ich das mache.</p>
-        
-        <p>Dass ich mein Wissen heute sogar in eigenen Schulungen weitergeben darf, macht mich stolz – und ist ein Weg, den ich mir als 13-jähriges Mädchen kaum hätte erträumen können.</p>
-    </div>
-</section>
+    <section id="about-me">
+        <h2>Über mich</h2>
+        <div class="about-content">
+            <p>Schon als Kind hatte ich den Traum, etwas Eigenes aufzubauen. Was als Leidenschaft für Brautkleider-Skizzen und Hochsteckfrisuren an meinen Barbie-Puppen begann, entwickelte sich über die Jahre zu meiner Berufung.</p>
+            <p>Make-up und Hairstyling faszinierten mich schon immer. Mit viel Disziplin, autodidaktischem Lernen durch Fachbücher und unzähligen Stunden des Übens habe ich mir mein Wissen hart erarbeitet – eine Erfahrung, für die ich heute unglaublich dankbar bin. Seit 2017 konnte ich in Salons erste professionelle Erfahrungen sammeln, während ich mein Können stetig verfeinerte.</p>
+            <p>Ende 2025 habe ich mir mit meinem Ladenlokal in Herne endlich den Traum von der eigenen Marke erfüllt. Was mich bis heute antreibt, ist das Strahlen meiner Kundinnen: Wenn sie am Ende in den Spiegel schauen und sich besonders selbstbewusst und wunderschön fühlen, weiß ich, warum ich das mache.</p>
+            <p>Dass ich mein Wissen heute sogar in eigenen Schulungen weitergeben darf, macht mich stolz – und ist ein Weg, den ich mir als 13-jähriges Mädchen kaum hätte erträumen können.</p>
+        </div>
+    </section>
     
     <!-- Buchung -->
     <section id="booking" class="container bg-nude">
@@ -148,7 +170,8 @@
         </form>
     </section>
 
-<div id="beauty-modal" class="modal">
+    <!-- Modal für erfolgreiche Buchung -->
+    <div id="beauty-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
             <div class="modal-icon">✨</div>
@@ -158,10 +181,22 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 NALIZ – Make-up • Hair • Hijab. Alle Rechte vorbehalten.</p>
     </footer>
-<!-- JavaScript für die Formular-Logik -->
+
+    <!-- JavaScript für den Slider und Formular-Logik -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slider .slide');
+
+        function moveSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
     <script src="script.js"></script>
 
 </body>
