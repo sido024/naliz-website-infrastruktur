@@ -28,9 +28,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 3rem;
+    padding: 20px 50px;
     background-color: var(--color-white);
-    border-bottom: 1px solid var(--color-nude-accent);
 }
 
 header .logo img {
@@ -39,12 +38,12 @@ header .logo img {
 }
 
 nav a {
-    margin-left: 2rem;
     text-decoration: none;
     color: var(--color-black);
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 0.95rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
