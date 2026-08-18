@@ -169,3 +169,7 @@ Zur Sicherstellung des täglichen, automatisierten Betriebs wurde ein Cronjob im
 
 Code-Snippet
 0 3 * * * /usr/local/bin/backup-naliz.sh
+
+### Server-Wartung
+
+"Manuelle Ausführung des Backups mittels: bash backup-naliz.sh. Protokollierung erfolgt in C:\Users\stoprak1\OneDrive - WBSEDU\Dokumente\Projekt1
