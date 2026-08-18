@@ -58,3 +58,4 @@ Zur Sicherstellung der Datenverfügbarkeit wurde eine automatisierte Backup-Stra
 
 * Automatisierung: Implementierung als Cronjob, der das Backup täglich um 03:00 Uhr ausführt.
 
+* **Versionsverwaltung:** Das Skript wurde lokal versioniert und in das zentrale GitHub-Repository (`naliz-website-infrastruktur`) integriert. 
