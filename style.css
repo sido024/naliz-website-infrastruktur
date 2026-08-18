@@ -18,6 +18,11 @@ body {
     line-height: 1.6;
 }
 
+/*weiches Herunterspringen der Navigation */
+html {
+    scroll-behavoir: smooth;
+}    
+ 
 /* Header & Logo */
 header {
     display: flex;
