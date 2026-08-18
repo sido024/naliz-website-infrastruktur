@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+    // --- 0. HERO-SLIDER LOGIK ---
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.hero-slider .slide');
+
+    // Globale Funktion machen, damit der "onclick" im HTML sie findet
+    window.moveSlide = function(direction) {
+        if (slides.length > 0) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    };
     
     // --- 1. BUCHUNGS-FORMULAR & MODAL LOGIK ---
     const bookingForm = document.getElementById('booking-form');
