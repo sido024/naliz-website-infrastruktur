@@ -63,9 +63,11 @@ header nav a:hover {
 
 .hero-container {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 120px;
+    margin: 0 auto;
 }
 
 /* Linke Seite: Slider */
