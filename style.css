@@ -379,6 +379,11 @@ input, select {
     transform: translateY(0);
 }
 
+/* Hover-Effekt für Social Media Icons */
+#footer-kontakt a:hover {
+    color: var(--color-taupe) !important;
+}
+
 /* --- Footer --- */
 footer {
     text-align: center;
