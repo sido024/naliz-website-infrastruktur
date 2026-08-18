@@ -134,3 +134,38 @@ Um zu sehen, ob Anfragen auf dem Server ankommen:
 ```bash
 sudo tail -f /var/log/nginx/access.log
 (Zum Beenden: Strg + C).
+
+3. Backup-Konzept und Automatisierung
+Um die Datenintegrität und die Hochverfügbarkeit des NALIZ-Projekts sicherzustellen, wurde ein automatisiertes Backup-Skript implementiert. Dieses sichert sowohl die Webserver-Dateien als auch die Nginx-Konfigurationen und bereinigt alte Archive selbstständig.
+
+3.1. Das Backup-Skript (/usr/local/bin/backup-naliz.sh)
+Das Skript erstellt ein komprimiertes .tar.gz-Archiv des Web-Verzeichnisses sowie der Serverkonfiguration, legt es in einem strukturierten Backup-Pfad ab und löscht Backups, die älter als 7 Tage sind.
+
+Bash
+#!/bin/bash
+# NALIZ Backup Skript
+
+SOURCE_WEB="/var/www/mein-projekt"
+SOURCE_CONFIG="/etc/nginx/sites-available"
+BACKUP_DIR="/var/www/mein-projekt/backups"
+DATE=$(date +%Y-%m-%d_%H-%M-%S)
+BACKUP_FILE="$BACKUP_DIR/naliz_backup_$DATE.tar.gz"
+
+# Verzeichnis sicherstellen und Archiv erstellen
+mkdir -p $BACKUP_DIR
+tar -czf $BACKUP_FILE $SOURCE_WEB $SOURCE_CONFIG
+
+# Retention Policy: Backups älter als 7 Tage löschen
+find $BACKUP_DIR -type f -name "*.tar.gz" -mtime +7 -delete
+
+echo "Backup erfolgreich: $BACKUP_FILE"
+3.2. Rechtevergabe
+Damit das Skript fehlerfrei ausgeführt werden kann und die notwendigen Systemrechte besitzt, wurden die Ausführungsrechte entsprechend gesetzt:
+
+Bash
+sudo chmod +x /usr/local/bin/backup-naliz.sh
+3.3. Automatisierung via Cronjob
+Zur Sicherstellung des täglichen, automatisierten Betriebs wurde ein Cronjob im Root-Kontext eingerichtet (sudo crontab -e), der das Skript jeden Tag um 03:00 Uhr nachts ausführt:
+
+Code-Snippet
+0 3 * * * /usr/local/bin/backup-naliz.sh
