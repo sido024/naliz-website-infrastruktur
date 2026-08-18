@@ -65,14 +65,14 @@ header nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 0px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 /* Linke Seite: Slider */
 .hero-slider {
-    flex: 1.2;
+    flex: 1;
     min-width: 300px;
     position: relative;
     overflow: hidden;
