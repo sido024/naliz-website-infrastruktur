@@ -88,10 +88,12 @@ header nav a:hover {
     height: 100%;
     opacity: 0;
     transition: opacity 0.8s ease-in-out;
+    pointer-events: none;
 }
 
 .hero-slider .slide.active {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .hero-slider img {
