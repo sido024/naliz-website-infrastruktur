@@ -32,7 +32,7 @@
     <section class="hero-slider-section">
         <div class="hero-container">
             
-            <!-- LINKE SEITE: Der Bild-Slider (hier kannst du später deine 3-4 Ladenbilder als bild1.jpg, bild2.jpg etc. einfügen) -->
+            <!-- LINKE SEITE: Der Bild-Slider -->
             <div class="hero-slider">
                 <div class="slide active">
                     <img src="hero_slider_02.jpg" alt="Salon Ansicht 1">
@@ -133,35 +133,35 @@
         </div>
     </section>
 
-  <!-- Über mich -->
-<section id="ueber-mich" class="container">
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 60px; max-width: 1200px; margin: 0 auto;">
+    <!-- Über mich -->
+    <section id="ueber-mich" class="container">
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 60px; max-width: 1200px; margin: 0 auto;">
+            
+            <!-- LINKE SEITE: Der Text über dich -->
+            <div class="scroll-reveal-box" style="flex: 1.2; min-width: 300px;">
+                <h2 style="font-size: 2.2rem; font-weight: normal; letter-spacing: 2px; color: #111; margin-bottom: 20px; border-bottom: 2px solid var(--color-taupe); padding-bottom: 10px;">
+                    ÜBER MICH
+                </h2>
+                <p style="color: #555; font-size: 1rem; line-height: 1.8; margin-bottom: 15px;">
+                    Schon als Kind hatte ich den Traum, etwas Eigenes aufzubauen. Was als Leidenschaft für Brautkleider-Skizzen und Hochsteckfrisuren an meinen Barbie-Puppen begann, entwickelte sich über die Jahre zu meiner Berufung.
+                </p>
+                <p style="color: #555; font-size: 1rem; line-height: 1.8; margin-bottom: 15px;">
+                    Mit viel Disziplin und unzähligen Stunden des Übens habe ich mir mein Wissen hart erarbeitet. Seit 2017 konnte ich in Salons erste professionelle Erfahrungen sammeln, während ich mein Können stetig verfeinerte.
+                </p>
+                <p style="color: #555; font-size: 1rem; line-height: 1.8;">
+                    Ende 2025 habe ich mir mit meinem Ladenlokal in Herne endlich den Traum von der eigenen Marke erfüllt. Was mich bis heute antreibt, ist das Strahlen meiner Kundinnen: Wenn sie in den Spiegel schauen und sich selbstbewusst und wunderschön fühlen, weiß ich, warum ich das mache.
+                </p>
+            </div>
+
+            <!-- RECHTE SEITE: Dein Bild -->
+            <div class="scroll-reveal-box" style="flex: 1; min-width: 280px; max-width: 400px; background: var(--color-nude-light); border: 1px solid var(--color-nude-accent); padding: 15px; border-radius: 4px; text-align: center;">
+                <img src="Logo_Zilan.jpg" alt="Zilan von NALIZ" style="width: 100%; height: auto; border-radius: 2px; display: block;">
+            </div>
+
+        </div>
+    </section>
         
-        <!-- LINKE SEITE: Der Text über dich -->
-        <div class="scroll-reveal-box" style="flex: 1.2; min-width: 300px;">
-            <h2 style="font-size: 2.2rem; font-weight: normal; letter-spacing: 2px; color: #111; margin-bottom: 20px; border-bottom: 2px solid var(--color-taupe); padding-bottom: 10px;">
-                ÜBER MICH
-            </h2>
-           <p style="color: #555; font-size: 1rem; line-height: 1.8; margin-bottom: 15px;">
-                Schon als Kind hatte ich den Traum, etwas Eigenes aufzubauen. Was als Leidenschaft für Brautkleider-Skizzen und Hochsteckfrisuren an meinen Barbie-Puppen begann, entwickelte sich über die Jahre zu meiner Berufung.
-            </p>
-            <p style="color: #555; font-size: 1rem; line-height: 1.8; margin-bottom: 15px;">
-                Mit viel Disziplin und unzähligen Stunden des Übens habe ich mir mein Wissen hart erarbeitet. Seit 2017 konnte ich in Salons erste professionelle Erfahrungen sammeln, während ich mein Können stetig verfeinerte.
-            </p>
-            <p style="color: #555; font-size: 1rem; line-height: 1.8;">
-                Ende 2025 habe ich mir mit meinem Ladenlokal in Herne endlich den Traum von der eigenen Marke erfüllt. Was mich bis heute antreibt, ist das Strahlen meiner Kundinnen: Wenn sie in den Spiegel schauen und sich selbstbewusst und wunderschön fühlen, weiß ich, warum ich das mache.
-            </p>
-        </div>
-
-        <!-- RECHTE SEITE: Dein Bild im passenden Nude-Kasten-Stil -->
-        <div class="scroll-reveal-box" style="flex: 1; min-width: 280px; max-width: 400px; background: var(--color-nude-light); border: 1px solid var(--color-nude-accent); padding: 15px; border-radius: 4px; text-align: center;">
-            <img src="DEIN_BILD_NAME.jpg" alt="Zilan von NALIZ" style="width: 100%; height: auto; border-radius: 2px; display: block;">
-        </div>
-
-    </div>
-</section>
-    
-  <!-- Buchung -->
+    <!-- Buchung -->
     <section id="booking" class="container bg-nude">
         <h2 class="section-title">Terminvereinbarung</h2>
         <form id="booking-form">
@@ -170,7 +170,7 @@
                 <input type="text" id="name" required placeholder="z. B. Merve Yilmaz">
             </div>
 
-               <div class="form-group">
+            <div class="form-group">
                 <label for="email">E-Mail-Adresse</label>
                 <input type="email" id="email" name="email" required placeholder="z. B. merve@beispiel.de">
             </div>
@@ -208,7 +208,7 @@
             <button type="submit" class="btn btn-full">Anfrage abschicken</button>
         </form>
     </section>
-    
+        
     <!-- Modal für erfolgreiche Buchung -->
     <div id="beauty-modal" class="modal">
         <div class="modal-content">
@@ -220,24 +220,24 @@
         </div>
     </div>
 
-<!-- Kontakt & Social Media -->
-<section id="footer-kontakt" class="container" style="text-align: center; background-color: var(--color-nude-light); padding: 4rem 1rem 5rem 1rem; margin-top: 60px; border-top: 1px solid var(--color-nude-accent);">
-    <h2 class="section-title" style="font-size: 1.5rem; letter-spacing: 2px; margin-bottom: 15px;">SOCIAL MEDIA & STANDORT</h2>
-    <p style="color: #666; margin-bottom: 25px; font-size: 0.95rem;">
-        Besuche mich in meinem Studio:<br>
-        <strong>Dorstener Str. 67, 44625 Herne</strong>
-    </p>
-    
-    <div style="font-size: 1.8rem;">
-        <a href="https://www.instagram.com/hairstyle_makeup_by_nal.iz?igsh=MW85M3QwemV0MnhxbQ==" target="_blank" style="margin: 0 15px; color: var(--color-black); transition: color 0.3s;">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.tiktok.com/@nal.iz?_r=1&_t=ZG-98z9LFgdGu9" target="_blank" style="margin: 0 15px; color: var(--color-black); transition: color 0.3s;">
-            <i class="fab fa-tiktok"></i>
-        </a>
-    </div>
-</section>
-    
+    <!-- Kontakt & Social Media -->
+    <section id="footer-kontakt" class="container" style="text-align: center; background-color: var(--color-nude-light); padding: 4rem 1rem 5rem 1rem; margin-top: 60px; border-top: 1px solid var(--color-nude-accent);">
+        <h2 class="section-title" style="font-size: 1.5rem; letter-spacing: 2px; margin-bottom: 15px;">SOCIAL MEDIA & STANDORT</h2>
+        <p style="color: #666; margin-bottom: 25px; font-size: 0.95rem;">
+            Besuche mich in meinem Studio:<br>
+            <strong>Dorstener Str. 67, 44625 Herne</strong>
+        </p>
+        
+        <div style="font-size: 1.8rem;">
+            <a href="https://www.instagram.com/hairstyle_makeup_by_nal.iz?igsh=MW85M3QwemV0MnhxbQ==" target="_blank" style="margin: 0 15px; color: var(--color-black); transition: color 0.3s;">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@nal.iz?_r=1&_t=ZG-98z9LFgdGu9" target="_blank" style="margin: 0 15px; color: var(--color-black); transition: color 0.3s;">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </section>
+        
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 NALIZ – Make-up • Hair • Hijab. Alle Rechte vorbehalten.</p>
