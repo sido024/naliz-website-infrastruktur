@@ -11,11 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
             currentSlide = (currentSlide + direction + slides.length) % slides.length;
             slides[currentSlide].classList.add('active');
         }
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-
-});
+    };
     
     // --- 1. BUCHUNGS-FORMULAR & MODAL LOGIK ---
     const bookingForm = document.getElementById('booking-form');
@@ -51,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             const formattedDate = date.split('-').reverse().join('.');
 
-            const beautyMessage = `Vielen Dank für deine Anfrage, liebe **${name}**!<br><br>Wir haben deine Reservierung für **${serviceName}** am **${formattedDate}** erhalten. Wir prüfen unser Termincouch und melden uns ganz schnell bei dir. ✨`;
+            const beautyMessage = `Vielen Dank für deine Anfrage, liebe **${name}**!<br><br>Wir haben deine Reservierung für **${serviceName}** am **${formattedDate}** erhalten. Wir prüfen unser Terminkontingent und melden uns ganz schnell bei dir. ✨`;
 
             showBeautyPopup(beautyMessage);
             bookingForm.reset();
@@ -75,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
             closeBeautyPopup();
         }
     });
-
 
     // --- 2. 3D-SCROLL-REVEAL-EFFEKT FÜR BOXEN ---
     const boxes = document.querySelectorAll('.scroll-reveal-box');
@@ -101,4 +96,5 @@ document.addEventListener("DOMContentLoaded", function() {
             observer.observe(box);
         });
     }
+
 });
