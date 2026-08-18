@@ -1,18 +1,18 @@
+// 1. Die Funktion ganz nach oben setzen, damit sie sofort global verfügbar ist
+let currentSlide = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.hero-slider .slide');
+    if (slides.length > 0) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+}
+
+// 2. Alles andere wartet auf das Laden der Seite
 document.addEventListener("DOMContentLoaded", function() {
 
-    // --- 0. HERO-SLIDER LOGIK ---
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.hero-slider .slide');
-
-    // Globale Funktion machen, damit der onclick-Befehl im HTML sie findet
-    window.moveSlide = function(direction) {
-        if (slides.length > 0) {
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + direction + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-        }
-    };
-    
     // --- 1. BUCHUNGS-FORMULAR & MODAL LOGIK ---
     const bookingForm = document.getElementById('booking-form');
     const modal = document.getElementById('beauty-modal');
@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const closeButton = document.querySelector('.close-button');
     const closeModalBtn = document.querySelector('.close-modal-btn');
 
-    // Funktion, um das Popup anzuzeigen
     function showBeautyPopup(message) {
         if (modalMessage && modal) {
             modalMessage.innerHTML = message;
@@ -28,14 +27,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Funktion, um das Popup zu schließen
     function closeBeautyPopup() {
         if (modal) {
             modal.classList.remove('show');
         }
     }
 
-    // Event Listener für das Formular (nur wenn es auf der Seite existiert)
     if (bookingForm) {
         bookingForm.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -54,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Modal schließen Event-Listener
     if (closeButton) closeButton.addEventListener('click', closeBeautyPopup);
     if (closeModalBtn) closeModalBtn.addEventListener('click', closeBeautyPopup);
 
