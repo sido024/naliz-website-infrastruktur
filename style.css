@@ -28,7 +28,9 @@ header {
     border-bottom: 1px solid var(--color-nude-accent);
 }
 
-header .logo {
+header .logo img {
+    max-height: 120px;
+    width: auto; 
     font-family: var(--font-heading);
     font-size: 2rem;
     font-weight: 600;
