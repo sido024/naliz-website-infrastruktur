@@ -13,6 +13,11 @@ function moveSlide(direction) {
 // 2. Alles andere wartet auf das Laden der Seite
 document.addEventListener("DOMContentLoaded", function() {
 
+// Automatischer Slider-Wechsel (alle 4 Sekunden)
+    setInterval(() => {
+        moveSlide(1);
+    }, 4000);
+
     // --- 1. BUCHUNGS-FORMULAR & MODAL LOGIK ---
     const bookingForm = document.getElementById('booking-form');
     const modal = document.getElementById('beauty-modal');
