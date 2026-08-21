@@ -19,7 +19,7 @@ sudo systemctl status nginx
 ### Schritt 2: Projektverzeichnis & Berechtigungen einrichten.
 Erstelle einen eigenen Ordner für die Webseite, damit er nicht im Standard-Pfad von Nginx liegt.
 
-```bash
+~~~bash
 # Ordner erstellen (ersetze 'mein-projekt' durch Projektnamen)
 sudo mkdir -p /var/www/mein-projekt
 
@@ -28,6 +28,7 @@ sudo chown -R $USER:$USER /var/www/mein-projekt
 
 # Test-Datei anlegen
 echo "<h1>Hallo Welt! Mein Server läuft.</h1>" > /var/www/mein-projekt/index.html
+~~~
 
 ### Schritt 3: Nginx Server-Block (Virtual Host) konfigurieren
 Erstelle eine eigene Konfigurationsdatei für die Domain (z. B. nilaz.test).
