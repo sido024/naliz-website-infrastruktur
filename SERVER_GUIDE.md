@@ -33,12 +33,13 @@ echo "<h1>Hallo Welt! Mein Server läuft.</h1>" > /var/www/mein-projekt/index.ht
 ### Schritt 3: Nginx Server-Block (Virtual Host) konfigurieren
 Erstelle eine eigene Konfigurationsdatei für die Domain (z. B. nilaz.test).
 
-```bash
+~~~bash
 sudo nano /etc/nginx/sites-available/nilaz.test
+~~~
 Füge folgenden Inhalt ein (Pfade und Domain entsprechend anpassen):
 
 Nginx
-server {
+~~~server {
     listen 80;
     server_name nilaz.test www.nilaz.test;
     root /var/www/mein-projekt;
@@ -49,10 +50,10 @@ server {
     }
 }
 Speichern in Nano: Strg + O, Enter, danach Strg + X.
-
+~~~
 Aktivieren der Site & Testen:
 
-```bash
+~~~bash
 # Softlink in sites-enabled erstellen
 sudo ln -s /etc/nginx/sites-available/nilaz.test /etc/nginx/sites-enabled/
 
@@ -63,14 +64,17 @@ sudo nginx -t
 sudo systemctl restart nginx
 Schritt 4: Lokale DNS-Auflösung einrichten
 Damit dein Rechner die Domain nilaz.test auf dem lokalen Server findet:
+~~~
 
-```bash
+~~~bash
 sudo nano /etc/hosts
+~~~
 Füge ganz unten folgende Zeile hinzu:
 
 Plaintext
 127.0.0.1   nilaz.test
 Speichern: Strg + O, Enter, Strg + X. (Testen im Browser unter [http://nilaz.test](http://nilaz.test)).
+~~~
 
 ### Schritt 5: SSL-Verschlüsselung (HTTPS) einrichten
 Erstellen eines eigenen lokalen SSL-Zertifikat mit OpenSSL.
