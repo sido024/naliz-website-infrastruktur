@@ -4,14 +4,17 @@ Dieser Leitfaden beschreibt den standardisierten, fehlerfreien Ablauf, um einen 
 ### Schritt 1: System-Update & Nginx Installation
 Bevor ich starte, bringe ich das System auf den neuesten Stand und installiere den Webserver.
 
-```bash
+~~~bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install nginx -y
+~~~
 Prüfen, ob Nginx läuft:
 
-```bash
+
+~~~bash
 sudo systemctl status nginx
 (Der Status sollte active (running) zeigen).
+~~~
 
 ### Schritt 2: Projektverzeichnis & Berechtigungen einrichten.
 Erstelle einen eigenen Ordner für die Webseite, damit er nicht im Standard-Pfad von Nginx liegt.
